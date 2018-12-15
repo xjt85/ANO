@@ -7,7 +7,7 @@
 }
 
 ::selection {
-	background-color: $accent;
+	background-color: $accent-blue;
 	color: #fff;
 }
 
@@ -19,12 +19,16 @@ body {
 	font-family: $default-font;
 	overflow-x: hidden;
 	color: $text;
-	input, textarea {
+
+	input,
+	textarea {
 		border: #666 1px solid;
 		outline: none;
+
 		&:focus:required:invalid {
 			border-color: red;
 		}
+
 		&:required:valid {
 			border-color: green;
 		}
@@ -35,6 +39,7 @@ body {
 	display: block;
 	max-width: 100%;
 	height: auto;
+
 	&.img-width {
 		width: 100%;
 	}
@@ -44,11 +49,72 @@ body {
 	text-align: center;
 }
 
-b, strong {
+b,
+strong {
 	font-weight: bold;
 }
 
+//Основная стилизация
+body {
+	border-top: 8px solid $accent-blue;
+	padding-top: 25px;
+}
 
+.button-yellow {
+	display: inline-block;
+	padding: 21px 34px 20px;
+	background-color: $accent-yellow;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 0;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 42px;
+	transition: all 0.2s;
+	cursor: pointer;
+
+	&:hover {
+		background-color: lighten($accent-yellow, 10%);
+
+	}
+
+	&:active {
+		background-color: darken($accent-yellow, 7%);
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+	}
+}
+
+.header {
+	position: relative;
+}
+
+// .header__top-line {
+// 	background-color: $accent-blue;
+// 	min-height: 8px;
+// 	margin-bottom: 25px;
+// }
+
+
+.header__bg {
+	min-height: 562px;
+}
+
+.header__h1 {
+	width: 100%;
+	position: absolute;
+	background-color: #fff;
+	opacity: 0.78;
+	text-transform: uppercase;
+	font: 48px/65px "Lato-Bold", sans-serif;
+}
+
+.map {
+	height: 408px;
+}
 
 
 

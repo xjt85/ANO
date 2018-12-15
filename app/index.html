@@ -22,29 +22,69 @@
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
 
+	<link rel="stylesheet" href="libs/normalize/normalize.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
 
 <body>
 	<!-- Custom HTML -->
-	<header class="header" style="background-image: url('');">
-		<div class="container">
+	<header class="header">
+		<!-- <div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12">
-					<nav class="nav-main">
-						<ul class="ul nav-main__ul">
-							<li class="li nav-main__li">Главная</li>
-							<li class="li nav-main__li">О компании</li>
-							<li class="li nav-main__li">Оценка</li>
-							<li class="li nav-main__li">Экспертиза</li>
-							<li class="li nav-main__li">Юридические услуги</li>
-							<li class="li nav-main__li">Контакты</li>
-						</ul>
-					</nav>
-					<form action="" class="search-form">
-						<input type="text" placeholder="Поиск" class="search-form__input">
-						<button>Поиск</button>
-					</form>
+					<div class="header__top-line"></div>
+				</div>
+			</div>
+		</div> -->
+		<div class="header__top-line">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<img src="img/logo.png" alt="Агентство независимой оценки" class="logo">
+					</div>
+					<div class="col-md-3">
+						<div class="contacts__title">Наш адрес:</div>
+						<div class="address">г. Самара, ул. Пушкина, д. 229, офис 307</div>
+						<div class="worktime"><span class="worktime__bold">Время работы:</span>Пн-Пт, 09:00 - 18:00</div>
+					</div>
+					<div class="col-md-3">
+						<div class="contacts__title">Наши телефоны:</div>
+						<div class="contacts__phone"><a href="tel:+78469721883">+7(846)<span class="contacts-phone__span">972-18-83</span></a></div>
+						<div class="contacts__phone"><a href="tel:89371761161">8(937)<span class="contacts-phone__span">176-11-61</span></a></div>
+					</div>
+					<div class="col-md-3">
+						<button class="button button-yellow">Заказать звонок</button>
+						<div class="button-descr">Наш оператор свяжется с вами в течение 5 минут</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<nav class="nav-main">
+							<ul class="ul nav-main__ul">
+								<li class="li nav-main__li">Главная</li>
+								<li class="li nav-main__li">О компании</li>
+								<li class="li nav-main__li">Оценка</li>
+								<li class="li nav-main__li">Экспертиза</li>
+								<li class="li nav-main__li">Юридические услуги</li>
+								<li class="li nav-main__li">Контакты</li>
+							</ul>
+						</nav>
+						<form action="" class="search-form">
+							<input type="text" placeholder="Поиск" class="search-form__input">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__bg" style="background-image: url('img/header-bg.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5"></div>
+					<div class="col-md-7">
+						<h1 class="header__h1">Любая оценка<br>Быстро<br>Профессионально<br>Доступно</h1>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -58,28 +98,225 @@
 			</div>
 			<div class="row">
 				<div class="col-md-3">
-					<div class="advantages__item"></div>
-					<h3 class="h3 advantages__h3"></h3>
-					<p class="advantages__descr"></p>
+					<div class="advantage__item">
+						<h3 class="h3 advantage__h3">Многолетний опыт работы</h3>
+						<p class="advantage__descr">Более 10 лет производим оценку и экспертизу всех видов объектов.</p>
+					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="advantages__item"></div>
-					<h3 class="h3 advantages__h3"></h3>
-					<p class="advantages__descr"></p>
+					<div class="advantage__item">
+						<h3 class="h3 advantage__h3">Индивидуальный подход</h3>
+						<p class="advantage__descr">Учитываем индивидуальные особенности каждого клиента. </p>
+					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="advantages__item"></div>
-					<h3 class="h3 advantages__h3"></h3>
-					<p class="advantages__descr"></p>
+					<div class="advantage__item">
+						<h3 class="h3 advantage__h3">Оперативность работы</h3>
+						<p class="advantage__descr">Позвоните или оставьте заявку – и специалист будет у Вас в этот же день!</p>
+					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="advantages__item"></div>
-					<h3 class="h3 advantages__h3"></h3>
-					<p class="advantages__descr"></p>
+					<div class="advantage__item">
+						<h3 class="h3 advantage__h3">Компетентные сотрудники</h3>
+						<p class="advantage__descr">В нашей компании работают аттестованные сотрудники с многолетним опытом работы.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-5">
+					<div class="hello-img__wrapper">
+						<img src="img/hello-bg.png" alt="Агентство независимой оценки" class="hello-img__img">
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="hello">
+						<h3 class="h3 hello__h3">Приветствуем Вас на сайте нашей компании!</h3>
+						<p class="hello__text">ООО Агентство Независимой Оценки "Экспертиза-Поволжья" - это многопрофильная компания,
+							которая занимает устойчивую позицию на рынке более 10 лет. Специалисты нашей организации имеют опыт работы в
+							каждой отрасли более 10 лет. Наша компания предлагает широкий спектр услуг для организаций и физических лиц.
+							Ключевые преимущества нашей компании - это профессионализм и ответственность.
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
+	<section class="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="h2 services__h2">Какую оценку и экспертизу мы проводим:</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="tabs">
+						<ul class="tab-header">
+							<li class="tab-header__item">Недвижимость</li>
+							<li class="tab-header__item">Транспорт</li>
+							<li class="tab-header__item">Имущество</li>
+							<li class="tab-header__item">Ущерб</li>
+							<li class="tab-header__item">Для бизнеса</li>
+						</ul>
+						<ul class="tab-content">
+							<li class="tab-content__item">
+								<div class="row">
+									<div class="col-md-8">
+										<img src="img/services-bg.png" alt="Агентство независимой оценки" class="hello-img__img">
+									</div>
+									<div class="col-md-4">
+										<ul class="tab-content__ul">
+											<li class="tab-content__li">Квартиры</li>
+											<li class="tab-content__li">Дома и земельные участки</li>
+											<li class="tab-content__li">Гаражи</li>
+											<li class="tab-content__li">Офисная</li>
+											<li class="tab-content__li">Торговая</li>
+											<li class="tab-content__li">Производственная</li>
+											<li class="tab-content__li">Складская</li>
+										</ul>
+										<button class="button button-yellow">Заказать оценку</button>
+									</div>
+								</div>
+							</li>
+							<li class="tab-content__item">Lorem ipsum dolor sit amet.</li>
+							<li class="tab-content__item">Lorem ipsum dolor sit amet consectetur.</li>
+							<li class="tab-content__item">Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
+							<li class="tab-content__item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+	</section>
+	<section class="workscheme">
+		<div class="container">
+			<div class="row">
+				<div class="col-md4">
+					<div class="scheme-item">
+						<div class="scheme-item__left">
+							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+						</div>
+						<div class="scheme-item__right">
+							<h3 class="h3 scheme__h3">Консультация</h3>
+							<p class="scheme__descr">Бесплатная консультация специалиста.</p>
+						</div>
+					</div>
+					<div class="scheme-item">
+						<div class="scheme-item__left">
+							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+						</div>
+						<div class="scheme-item__right">
+							<h3 class="h3 scheme__h3">Консультация</h3>
+							<p class="scheme__descr">Бесплатная консультация специалиста.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md4">
+					<div class="scheme-item">
+						<div class="scheme-item__left">
+							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+						</div>
+						<div class="scheme-item__right">
+							<h3 class="h3 scheme__h3">Консультация</h3>
+							<p class="scheme__descr">Бесплатная консультация специалиста.</p>
+						</div>
+					</div>
+					<div class="scheme-item">
+						<div class="scheme-item__left">
+							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+						</div>
+						<div class="scheme-item__right">
+							<h3 class="h3 scheme__h3">Консультация</h3>
+							<p class="scheme__descr">Бесплатная консультация специалиста.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md4">
+					<div class="scheme-item">
+						<div class="scheme-item__left">
+							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+						</div>
+						<div class="scheme-item__right">
+							<h3 class="h3 scheme__h3">Консультация</h3>
+							<p class="scheme__descr">Бесплатная консультация специалиста.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="callto-descr">По всем интересующим вопросам звоните</div>
+					<div class="callto-number"><a href="tel:+78469721883" class="callto_link">+7 (846) <span class="callto__span">972-18-83</span></a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="recommends">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="slider-people">
+
+					</div>
+				</div>
+				<div class="col-md-12">
+					<div class="slider-companies">
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1410a67af3b904d5a3bf29cd42ad92488dfb037f127fa9f099f4d51f71911afe&amp;source=constructor"
+		 width="100%" height="100%" frameborder="0"></iframe>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<div class="company-caption"></div>
+					<p class="company-descr">443001, г.Самара, ул.Пушкина, д.229, оф.307 тел.: (846) 972-18-83 ИНН 6319177860, КПП
+						631901001, ОГРН 1136319012213, р/с 40702810216130004251 в Филиал «Поволжский» ЗАО «ГЛОБЭКСБАНК» г.Тольятти, к/с
+						30101810400000000713, БИК 043678713</p>
+				</div>
+				<div class="col-md-5">
+					<ul class="footer-menu">
+						<li class="li footer-menu__list-item">
+							<a href="#" class="footer-menu__link">Услуги</a>
+						</li>
+						<li class="li footer-menu__list-item">
+							<a href="#" class="footer-menu__link">Новости</a>
+						</li>
+						<li class="li footer-menu__list-item">
+							<a href="#" class="footer-menu__link">Статьи</a>
+						</li>
+						<li class="li footer-menu__list-item">
+							<a href="#" class="footer-menu__link">Вопросы и Ответы</a>
+						</li>
+						<li class="li footer-menu__list-item">
+							<a href="#" class="footer-menu__link">О компании</a>
+						</li>
+						<li class="li footer-menu__list-item">
+							<a href="#" class="footer-menu__link">Контакты</a>
+						</li>
+					</ul>
+					<div class="copyright">Copyright, 2018 Все права защищены.</div>
+				</div>
+				<div class="col-md-3">
+					<a href="tel:+78469721883" class="tel1">+7 (846) 972-18-83</a>
+					<a href="tel:89371761161" class="tel2">8 (937) 176-11-61</a>
+					<div class="button button-yellow">Заказать звонок</div>
+					<div class="social">
+						<div class="social__vk"><i class="fab fa-vk"></i></div>
+						<div class="social__gplus"><i class="fab fa-google-plus-g"></i></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="js/scripts.min.js"></script>
 </body>
 

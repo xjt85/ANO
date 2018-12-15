@@ -1,16 +1,18 @@
-var syntax        = 'scss'; // Syntax: sass or scss;
+var syntax        = 'sсss', // Syntax: sass or scss;
+	gulpversion   = 4; // Gulp version: 3 or 4
+
 
 var gulp          = require('gulp'),
-		gutil         = require('gulp-util' ),
-		sass          = require('gulp-sass'),
-		browserSync   = require('browser-sync'),
-		concat        = require('gulp-concat'),
-		uglify        = require('gulp-uglify'),
-		cleancss      = require('gulp-clean-css'),
-		rename        = require('gulp-rename'),
-		autoprefixer  = require('gulp-autoprefixer'),
-		notify        = require("gulp-notify"),
-		rsync         = require('gulp-rsync');
+	gutil         = require('gulp-util' ),
+	sass          = require('gulp-sass'),
+	browserSync   = require('browser-sync'),
+	concat        = require('gulp-concat'),
+	uglify        = require('gulp-uglify'),
+	cleancss      = require('gulp-clean-css'),
+	rename        = require('gulp-rename'),
+	autoprefixer  = require('gulp-autoprefixer'),
+	notify        = require('gulp-notify'),
+	rsync         = require('gulp-rsync');
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -25,7 +27,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('styles', function() {
-	return gulp.src('app/'+syntax+'/**/*.'+syntax+'')
+	return gulp.src('app/scss/**/*.scss')
 	.pipe(sass({ outputStyle: 'expanded' }).on("error", notify.onError()))
 	.pipe(rename({ suffix: '.min', prefix : '' }))
 	.pipe(autoprefixer(['last 15 versions']))
@@ -34,7 +36,7 @@ gulp.task('styles', function() {
 	.pipe(browserSync.stream())
 });
 
-gulp.task('js', function() {
+gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/js/common.js', // Always at the end
@@ -42,6 +44,11 @@ gulp.task('js', function() {
 	.pipe(concat('scripts.min.js'))
 	// .pipe(uglify()) // Mifify js (opt.)
 	.pipe(gulp.dest('app/js'))
+	.pipe(browserSync.reload({ stream: true }))
+});
+
+gulp.task('code', function() {
+	return gulp.src('app/*.html')
 	.pipe(browserSync.reload({ stream: true }))
 });
 
@@ -60,10 +67,22 @@ gulp.task('rsync', function() {
 	}))
 });
 
-gulp.task('watch', ['styles', 'js', 'browser-sync'], function() {
-	gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
-	gulp.watch('app/*.html', browserSync.reload)
-});
+if (gulpversion == 3) {
+	gulp.task('watch', ['styles', 'scripts', 'browser-sync'], function() {
+		gulp.watch('app/'+syntax+'/**/*.'+syntax+'', ['styles']);
+		gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['scripts']);
+		gulp.watch('app/*.html', ['code'])
+	});
+	gulp.task('default', ['watch']);
+}
 
-gulp.task('default', ['watch']);
+//app/'+syntax+'/**/*.'+syntax+'
+
+if (gulpversion == 4) {
+	gulp.task('watch', function() {
+		gulp.watch('app/scss/**/*.scss', gulp.parallel('styles'));
+		gulp.watch(['libs/**/*.js', 'app/js/common.js'], gulp.parallel('scripts'));
+		gulp.watch('app/*.html', gulp.parallel('code'))
+	});
+	gulp.task('default', gulp.parallel('watch', 'styles', 'scripts', 'browser-sync'));
+}

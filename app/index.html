@@ -31,13 +31,6 @@
 <body>
 	<!-- Custom HTML -->
 	<header class="header">
-		<!-- <div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="header__top-line"></div>
-				</div>
-			</div>
-		</div> -->
 		<div class="header__top-line">
 			<div class="container">
 				<div class="row">
@@ -46,13 +39,13 @@
 					</div>
 					<div class="col-md-3">
 						<div class="contacts__title">Наш адрес:</div>
-						<div class="address">г. Самара, ул. Пушкина, д. 229, офис 307</div>
-						<div class="worktime"><span class="worktime__bold">Время работы:</span>Пн-Пт, 09:00 - 18:00</div>
+						<div class="contacts__address">г. Самара, ул. Пушкина, д. 229, офис 307</div>
+						<div class="contacts__worktime"><span class="worktime__bold">Время работы:</span>Пн-Пт, 09:00 - 18:00</div>
 					</div>
 					<div class="col-md-3">
 						<div class="contacts__title">Наши телефоны:</div>
-						<div class="contacts__phone"><a href="tel:+78469721883">+7(846)<span class="contacts-phone__span">972-18-83</span></a></div>
-						<div class="contacts__phone"><a href="tel:89371761161">8(937)<span class="contacts-phone__span">176-11-61</span></a></div>
+						<div><a href="tel:+78469721883" class="contacts-phone">+7(846)<span class="contacts-phone__span">972-18-83</span></a></div>
+						<div><a href="tel:89371761161" class="contacts-phone">8(937)<span class="contacts-phone__span">176-11-61</span></a></div>
 					</div>
 					<div class="col-md-3">
 						<button class="button button-yellow">Заказать звонок</button>
@@ -61,19 +54,22 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12">
-						<nav class="nav-main">
-							<ul class="ul nav-main__ul">
-								<li class="li nav-main__li">Главная</li>
-								<li class="li nav-main__li">О компании</li>
-								<li class="li nav-main__li">Оценка</li>
-								<li class="li nav-main__li">Экспертиза</li>
-								<li class="li nav-main__li">Юридические услуги</li>
-								<li class="li nav-main__li">Контакты</li>
-							</ul>
-						</nav>
-						<form action="" class="search-form">
-							<input type="text" placeholder="Поиск" class="search-form__input">
-						</form>
+						<div class="nav-wrapper">
+							<nav class="nav-main">
+								<ul class="ul nav-main__ul">
+									<li class="li nav-main__li"><a href="#" class="nav-main__link">Главная</a></li>
+									<li class="li nav-main__li"><a href="#" class="nav-main__link">О компании</a></li>
+									<li class="li nav-main__li"><a href="#" class="nav-main__link">Оценка</a></li>
+									<li class="li nav-main__li"><a href="#" class="nav-main__link">Экспертиза</a></li>
+									<li class="li nav-main__li"><a href="#" class="nav-main__link">Юридические услуги</a></li>
+									<li class="li nav-main__li"><a href="#" class="nav-main__link">Контакты</a></li>
+								</ul>
+							</nav>
+							<form action="" class="search-form">
+								<i class="fa fa-search search-icon" aria-hidden="true"></i>
+								<input type="text" placeholder="Поиск" class="search-form__input">
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -57,7 +57,12 @@ strong {
 //Основная стилизация
 body {
 	border-top: 8px solid $accent-blue;
-	padding-top: 25px;
+	padding-top: 24px;
+}
+
+.logo {
+	width: 272px;
+	height: 111px;
 }
 
 .button-yellow {
@@ -92,12 +97,83 @@ body {
 	position: relative;
 }
 
-// .header__top-line {
-// 	background-color: $accent-blue;
-// 	min-height: 8px;
-// 	margin-bottom: 25px;
-// }
+.contacts {
+	&__title {
+		color: $text-gray;
+		margin-bottom: 5px;
+	}
 
+	&__address,
+	&__worktime {
+		font-size: 16px;
+		line-height: 30px;
+	}
+
+	&-phone {
+		font: bold 18px/24px "Lato-Bold", sans-serif;
+		color: $text;
+
+		&:hover {
+			color: $text;
+		}
+
+		&__span {
+			font-size: 24px;
+			line-height: 18px;
+		}
+	}
+}
+
+.nav-wrapper {
+	display: flex;
+	align-items: stretch;
+	background-color: #f1f5f9;
+}
+
+.nav-main__ul {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-between;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.nav-main__link {
+	display: block;
+	text-decoration: none;
+	color: $text;
+	padding: 22px 26px;
+	min-height: 62px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $accent-blue;
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+.search-form {
+	position: relative;
+}
+
+.search-icon {
+	position: absolute;
+	top: 11px;
+	left: 15px;
+	color: #999797;
+}
+
+.search-form__input {
+	color: #999797;
+	padding: 5px 17px;
+	border: none;
+	border-radius: 18px;
+	text-indent: 19px;
+	&::-webkit-input-placeholder {
+		color: #999797;
+	}
+}
 
 .header__bg {
 	min-height: 562px;
@@ -109,7 +185,7 @@ body {
 	background-color: #fff;
 	opacity: 0.78;
 	text-transform: uppercase;
-	font: 48px/65px "Lato-Bold", sans-serif;
+	font: bold 48px/65px "Lato-Bold", sans-serif;
 }
 
 .map {

@@ -94,7 +94,7 @@ body {
 }
 
 .button-header {
-	margin: 0 -22px 8px;
+	margin: 6px -22px 8px;
 }
 
 .button-descr {
@@ -240,6 +240,7 @@ body {
 .adv-item {
 	display: inline-block;
 	text-align: center;
+	padding: 10%;
 
 	&__img-wrapper {
 		display: inline-block;
@@ -253,7 +254,7 @@ body {
 	&__img {
 		display: inline-block;
 		vertical-align: middle;
-		transform: translateY(60%);
+		transform: translateY(65%);
 	}
 
 	&__descr {
@@ -261,6 +262,63 @@ body {
 	}
 }
 
+.hello {
+	padding: 0 0 62px;
+
+	.hello-img {
+		margin-top: 20px;
+		width: 370px;
+		height: 283px;
+		background-color: $accent-blue;
+
+		&__img {
+			position: relative;
+			top: 12px;
+			left: -12px;
+			width: 370px;
+			height: 283px;
+			background-image: url('../img/hello-bg.png');
+			background-size: cover;
+			background-position: -219px 0;
+		}
+	}
+
+	&__h3 {
+		margin: 40px 0 29px;
+		font-size: 25px;
+		text-transform: none;
+	}
+
+	&__text {
+		font-family: $default-font;
+		line-height: 30px;
+	}
+}
+
+.services__h2 {
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.tab-header {
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin-bottom: 5px;
+	&__item {
+		padding: 20px 67px 15px;
+		background-color: #F1F5F9;
+	}
+}
+
+.tab-content {
+	list-style: none;
+	padding: 0;
+	&__item {
+		background-color: #F1F5F9;
+	}
+}
 
 
 

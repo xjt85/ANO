@@ -54,7 +54,7 @@ strong {
 	font-weight: bold;
 }
 
-//Основная стилизация
+//Основная стилизация-------------------------------------------------------------------------------------
 body {
 	border-top: 8px solid $accent-blue;
 	padding-top: 24px;
@@ -171,14 +171,19 @@ body {
 	}
 }
 
-.search-form {
+.search-form__wrapper {
 	position: relative;
+}
+
+.search-form {
+	display: inline-block;
+	vertical-align: middle;
 	width: 80%;
 }
 
-.search-icon {
+.search-form__icon {
 	position: absolute;
-	top: 11px;
+	top: 10px;
 	left: 15px;
 	color: #999797;
 }
@@ -295,30 +300,75 @@ body {
 	}
 }
 
-.services__h2 {
-	text-transform: uppercase;
-	margin-bottom: 50px;
+.services {
+	&__h2 {
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+
+	&__img {
+		height: 100%;
+		width: 100%;
+		background-image: url('../img/services-bg.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
 }
+
 
 .tab-header {
 	padding: 0;
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	margin-bottom: 5px;
+	margin-bottom: 3px;
+
 	&__item {
-		padding: 20px 67px 15px;
-		background-color: #F1F5F9;
+		padding: 20px 68px 15px;
+		background-color: #F9FAFA;
+		cursor: pointer;
+		transition: all 0.3s;
+
+		&:hover {
+			background-color: #F1F5F9;
+		}
 	}
 }
 
 .tab-content {
-	list-style: none;
-	padding: 0;
+	background-color: #F1F5F9;
+
 	&__item {
-		background-color: #F1F5F9;
+		padding: 116px 0 100px;
 	}
+
+	&__ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		margin-bottom: 100px;
+	}
+
+	&__link {
+		display: block;
+		width: 80%;
+		padding: 3px 0;
+		color: $text;
+		text-decoration: none;
+		line-height: 16px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 }
+
+.button-wrapper {
+	text-align: center;
+}
+
 
 
 

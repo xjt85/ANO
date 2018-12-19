@@ -68,11 +68,13 @@
 								</ul>
 							</nav>
 						</div>
-						<div class="col-md-3 justify-content-center">
-							<form action="" class="search-form align-middle">
-								<i class="fa fa-search search-icon" aria-hidden="true"></i>
-								<input type="text" placeholder="Поиск" class="search-form__input">
-							</form>
+						<div class="col-md-3">
+							<div class="search-form__wrapper">
+								<form action="" class="search-form">
+									<i class="fa fa-search search-form__icon" aria-hidden="true"></i>
+									<input type="text" placeholder="Поиск" class="search-form__input">
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -171,19 +173,21 @@
 					<li class="tab-content__item">
 						<div class="row">
 							<div class="col-md-8">
-								<img src="img/services-bg.png" alt="Агентство независимой оценки" class="hello-img__img">
+								<div class="services__img"></div>
 							</div>
 							<div class="col-md-4">
 								<ul class="tab-content__ul">
-									<li class="tab-content__li">Квартиры</li>
-									<li class="tab-content__li">Дома и земельные участки</li>
-									<li class="tab-content__li">Гаражи</li>
-									<li class="tab-content__li">Офисная</li>
-									<li class="tab-content__li">Торговая</li>
-									<li class="tab-content__li">Производственная</li>
-									<li class="tab-content__li">Складская</li>
+									<li class="tab-content__li"><a href="#" class="tab-content__link">Квартиры</a></li>
+									<li class="tab-content__li"><a href="#" class="tab-content__link">Дома и земельные участки</a></li>
+									<li class="tab-content__li"><a href="#" class="tab-content__link">Гаражи</a></li>
+									<li class="tab-content__li"><a href="#" class="tab-content__link">Офисная</a></li>
+									<li class="tab-content__li"><a href="#" class="tab-content__link">Торговая</a></li>
+									<li class="tab-content__li"><a href="#" class="tab-content__link">Производственная</a></li>
+									<li class="tab-content__li"><a href="#" class="tab-content__link">Складская</a></li>
 								</ul>
-								<button class="button button-yellow">Заказать оценку</button>
+								<div class="button-wrapper">
+									<button class="button button-yellow">Заказать оценку</button>
+								</div>
 							</div>
 						</div>
 					</li>
@@ -209,7 +213,7 @@
 					</div>
 					<div class="scheme-item">
 						<div class="scheme-item__left">
-							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+							<img src="img/scheme/item2.png" alt="Консультация" class="scheme-item__img">
 						</div>
 						<div class="scheme-item__right">
 							<h3 class="h3 scheme__h3">Консультация</h3>
@@ -220,7 +224,7 @@
 				<div class="col-md4">
 					<div class="scheme-item">
 						<div class="scheme-item__left">
-							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+							<img src="img/scheme/item3.png" alt="Консультация" class="scheme-item__img">
 						</div>
 						<div class="scheme-item__right">
 							<h3 class="h3 scheme__h3">Консультация</h3>
@@ -229,7 +233,7 @@
 					</div>
 					<div class="scheme-item">
 						<div class="scheme-item__left">
-							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+							<img src="img/scheme/item4.png" alt="Консультация" class="scheme-item__img">
 						</div>
 						<div class="scheme-item__right">
 							<h3 class="h3 scheme__h3">Консультация</h3>
@@ -240,7 +244,7 @@
 				<div class="col-md4">
 					<div class="scheme-item">
 						<div class="scheme-item__left">
-							<img src="img/scheme/item1.png" alt="Консультация" class="scheme-item__img">
+							<img src="img/scheme/item5.png" alt="Консультация" class="scheme-item__img">
 						</div>
 						<div class="scheme-item__right">
 							<h3 class="h3 scheme__h3">Консультация</h3>
@@ -261,6 +265,11 @@
 	</section>
 	<section class="recommends">
 		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="h2 recommends__h2">Нас рекомендуют:</h2>
+				</div>
+			</div>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="slider-people">
@@ -312,8 +321,8 @@
 					<div class="copyright">Copyright, 2018 Все права защищены.</div>
 				</div>
 				<div class="col-md-3">
-					<a href="tel:+78469721883" class="tel1">+7 (846) 972-18-83</a>
-					<a href="tel:89371761161" class="tel2">8 (937) 176-11-61</a>
+					<a href="tel:+78469721883" class="footer__tel footer__tel1">+7 (846) 972-18-83</a>
+					<a href="tel:89371761161" class="footer__tel footer__tel2">8 (937) 176-11-61</a>
 					<div class="button button-yellow">Заказать звонок</div>
 					<div class="social">
 						<div class="social__vk"><i class="fab fa-vk"></i></div>

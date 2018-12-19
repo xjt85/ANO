@@ -112,7 +112,7 @@ body {
 .contacts {
 	&__title {
 		color: $text-gray;
-		margin-bottom: 5px;
+		margin-bottom: 7px;
 	}
 
 	&__address,
@@ -123,17 +123,21 @@ body {
 
 	&-phone {
 		display: block;
-		font: bold 18px/24px "Lato-Bold", sans-serif;
+		font: bold 19px/25px "Lato-Bold", sans-serif;
 		color: $text;
-		margin-bottom: 5px;
+
+		&:first-of-type {
+			margin-bottom: 8px;
+		}
 
 		&:hover {
 			color: $text;
 		}
 
 		&__span {
-			font-size: 24px;
-			line-height: 18px;
+			display: inline-block;
+			font-size: 25px;
+			line-height: 19px;
 		}
 	}
 }
@@ -172,17 +176,21 @@ body {
 }
 
 .search-form__wrapper {
-	position: relative;
+	text-align: center;
+	display: flex;
+	vertical-align: middle;
+	width: 100%;
+	height: 100%;
 }
 
 .search-form {
-	display: inline-block;
-	vertical-align: middle;
-	width: 80%;
+	position: relative;
+	width: 90%;
 }
 
 .search-form__icon {
 	position: absolute;
+	display: inline-block;
 	top: 10px;
 	left: 15px;
 	color: #999797;
@@ -322,13 +330,13 @@ body {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
-	margin-bottom: 3px;
+	margin-bottom: 0;
 
 	&__item {
 		padding: 20px 68px 15px;
 		background-color: #F9FAFA;
 		cursor: pointer;
-		transition: all 0.3s;
+		transition: all 0.5s;
 
 		&:hover {
 			background-color: #F1F5F9;
@@ -341,6 +349,10 @@ body {
 
 	&__item {
 		padding: 116px 0 100px;
+		display: none;
+		&.active {
+			display: block;
+		}
 	}
 
 	&__ul {
@@ -391,8 +403,6 @@ body {
 .map {
 	height: 408px;
 }
-
-//Проверка github
 
 
 @import "media"; // Always at the end

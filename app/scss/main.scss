@@ -314,14 +314,12 @@ body {
 		margin-bottom: 50px;
 	}
 
-	&__img {
-		height: 100%;
-		width: 100%;
-		background-image: url('../img/services-bg.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
+}
 
+
+.tabs {
+	height: 100%;
+	width: 100%;
 }
 
 
@@ -345,11 +343,15 @@ body {
 }
 
 .tab-content {
-	background-color: #F1F5F9;
+	margin: 0;
+	padding: 0;
 
 	&__item {
+		background-color: #F1F5F9;
+		background: #F1F5F9 url('../img/services-bg.png') 0% 0% / cover no-repeat;
 		padding: 116px 0 100px;
 		display: none;
+
 		&.active {
 			display: block;
 		}
@@ -377,9 +379,88 @@ body {
 
 }
 
-.button-wrapper {
-	text-align: center;
+.workscheme {
+	padding-top: 45px;
+
+	&__h2 {
+		text-transform: uppercase;
+		margin-bottom: 75px;
+	}
 }
+
+
+.scheme-item {
+	white-space: nowrap;
+
+	&__left {
+		width: calc(40% - 46px / 2);
+		display: inline-block;
+		margin-right: 46px;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__right {
+		width: calc(60% - 46px / 2);
+		display: inline-block;
+
+	}
+}
+
+
+.callto {
+
+	&__descr {
+		position: relative;
+		font: 30px 'Lato-Bold', sans-serif;
+		text-align: center;
+
+		&::before {
+			position: absolute;
+			height: 100%;
+			content: '';
+			width: 50%;
+			top: 0;
+			right: 0;
+			background-color: #f3f3f3;
+		}
+	}
+
+	&__number {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			content: '';
+			height: 100%;
+			width: 50%;
+			top: 0;
+			left: 0;
+			background-color: $accent-yellow;
+		}
+	}
+
+	&__link {
+		font: 35px 'Lato-Bold', sans-serif;
+		color: $text;
+	}
+
+	&__span {
+		font-size: 46px;
+	}
+}
+
+.recommends {
+	padding: 50px 0 20px;
+
+	&__h2 {
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+}
+
 
 
 

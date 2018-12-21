@@ -391,9 +391,15 @@ body {
 
 .scheme-item {
 	white-space: nowrap;
+	margin-bottom: 60px;
+
+	&__h3 {
+		color: #4d4d4d;
+		text-transform: none;
+	}
 
 	&__left {
-		width: calc(40% - 46px / 2);
+		width:39%;
 		display: inline-block;
 		margin-right: 46px;
 	}
@@ -403,7 +409,7 @@ body {
 	}
 
 	&__right {
-		width: calc(60% - 46px / 2);
+		width: 60%;
 		display: inline-block;
 
 	}
@@ -411,35 +417,29 @@ body {
 
 
 .callto {
+	position: relative;
+	background-color: #f3f3f3;
+	padding: 20px 0;
+
+	&::before {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 50%;
+		top: 0;
+		right: 0;
+		background-color: $accent-yellow;
+	}
 
 	&__descr {
-		position: relative;
 		font: 30px 'Lato-Bold', sans-serif;
 		text-align: center;
-
-		&::before {
-			position: absolute;
-			height: 100%;
-			content: '';
-			width: 50%;
-			top: 0;
-			right: 0;
-			background-color: #f3f3f3;
-		}
+		color: #4d4d4d;
 	}
 
 	&__number {
 		position: relative;
-
-		&::before {
-			position: absolute;
-			content: '';
-			height: 100%;
-			width: 50%;
-			top: 0;
-			left: 0;
-			background-color: $accent-yellow;
-		}
+		top: 12px;
 	}
 
 	&__link {

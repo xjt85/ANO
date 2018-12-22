@@ -23,6 +23,7 @@
     "gulp-util": "^3.0.8"
   },
   "dependencies": {
+    "bower": "^1.8.4",
     "ncu": "^0.2.1"
   }
 }

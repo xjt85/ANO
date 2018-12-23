@@ -510,7 +510,7 @@ body {
 }
 
 .reviews {
-	padding: 50px 0 70px;
+	padding: 50px 0 30px;
 
 	&__h2 {
 		text-transform: uppercase;
@@ -522,13 +522,14 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	padding-bottom: 70px;
+	border-bottom: 2px solid #eee;
 }
 
 .sp-item {
 	display: flex;
 	align-items: flex-start;
-	max-width: calc(50% - 19px);
-	margin-right: 37px;
+	margin-right: 50px;
 
 	&__author {
 		font-weight: bold;
@@ -539,10 +540,8 @@ body {
 		border: 1px solid $accent-yellow;
 		max-width: 166px;
 		height: auto;
-		margin-right: 50px;
+		margin-right: 37px;
 	}
-
-
 
 	&__review {
 		position: relative;
@@ -573,6 +572,11 @@ body {
 	}
 }
 
+.slider-companies {
+	padding: 30px 0;
+}
+
+
 .footer {
 	font-size: 14px;
 	padding: 30px 0;
@@ -580,7 +584,7 @@ body {
 	background-color: $accent-blue;
 
 	&__h3 {
-		width: 85%;
+		width: 90%;
 		font: normal 14px/1.8em 'Lato-Bold', sans-serif;
 		color: #ffffff;
 		margin-bottom: 5px;

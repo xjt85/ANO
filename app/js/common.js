@@ -16,17 +16,19 @@ $(document).ready(function () {
 	// -------------------------------------Подключение и активация Owl Carousel-------------------------------------------
 	$('.slider-people').owlCarousel({
 		nav: true,
-		navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
 		dots: false,
 		responsive: {
 			0: {
 				items: 1
 			},
 			600: {
-				items: 1
+				items: 1,
+				nav: true
 			},
 			1000: {
-				items: 2
+				items: 2,
+				nav: true,
+				navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>']
 			}
 		}
 	});
@@ -35,13 +37,16 @@ $(document).ready(function () {
 		dots: true,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				dots: true
 			},
 			600: {
-				items: 3
+				items: 3,
+				dots: true
 			},
 			1000: {
-				items: 4
+				items: 4,
+				dots: true
 			}
 		}
 	});

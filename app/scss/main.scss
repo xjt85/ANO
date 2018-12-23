@@ -55,8 +55,10 @@ strong {
 }
 
 //Основная стилизация-------------------------------------------------------------------------------------
-ul {
+ul,
+p {
 	padding: 0;
+	margin: 0;
 }
 
 body {
@@ -338,7 +340,8 @@ body {
 		cursor: pointer;
 		transition: all 0.5s;
 
-		&:hover {
+		&:hover,
+		&.active {
 			background-color: #F1F5F9;
 		}
 	}
@@ -519,9 +522,9 @@ body {
 }
 
 .slider-people {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
+	// display: flex;
+	// justify-content: space-between;
+	// align-items: flex-start;
 	padding-bottom: 70px;
 	border-bottom: 2px solid #eee;
 }
@@ -576,6 +579,9 @@ body {
 	padding: 30px 0;
 }
 
+.map {
+	height: 408px;
+}
 
 .footer {
 	font-size: 14px;
@@ -597,8 +603,6 @@ body {
 		line-height: 2em;
 	}
 
-
-
 }
 
 
@@ -608,13 +612,14 @@ body {
 	justify-content: space-between;
 	list-style: none;
 	width: 100%;
+	margin-bottom: 40px;
 
 	&__item {
-		width: calc(33% - 23px);
-
-		&:nth-child(3n) {
-			margin-right: 0;
-		}
+		flex-basis: 33%;
+		//width: calc(33% - 23px);
+		// &:nth-child(3n) {
+		// 	margin-right: 0;
+		// }
 	}
 
 	&__link {
@@ -695,9 +700,6 @@ body {
 
 
 
-.map {
-	height: 408px;
-}
 
 
 @import "media"; // Always at the end

@@ -66,9 +66,23 @@ body {
 	padding-top: 24px;
 }
 
-.logo {
-	width: 272px;
-	height: 111px;
+.header-logo {
+	position: relative;
+
+	&__text {
+		white-space: nowrap;
+		position: absolute;
+		top: 5px;
+		left: 19px;
+		font-size: 11px;
+		text-transform: uppercase;
+		color: $accent-blue;
+	}
+
+	&__img {
+		width: 272px;
+		height: 111px;
+	}
 }
 
 .button-yellow {

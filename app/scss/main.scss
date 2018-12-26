@@ -80,19 +80,28 @@ body {
 	}
 
 	&__img {
-		width: 272px;
-		height: 111px;
+		max-width: 272px;
+		width: 100%;
 	}
 }
 
-.button-yellow {
+.button {
 	display: inline-block;
-	background-color: $accent-yellow;
-	text-transform: uppercase;
+	padding: 21px 34px 20px;
 	border: none;
+	cursor: pointer;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 0;
+}
+
+.button_header {
+	background-color: $accent-yellow;
+	margin: 11px 0px 6px;
 	border-radius: 42px;
 	transition: all 0.2s;
-	cursor: pointer;
 
 	&:hover {
 		background-color: lighten($accent-yellow, 10%);
@@ -109,14 +118,6 @@ body {
 	}
 }
 
-.button-header {
-	font-size: 14px;
-	font-weight: bold;
-	padding: 21px 34px 20px;
-	line-height: 0;
-	margin: 6px -22px 8px;
-}
-
 .button-descr {
 	width: 100%;
 	display: inline-block;
@@ -127,6 +128,10 @@ body {
 
 .header {
 	position: relative;
+}
+
+.header-logo {
+	text-align: center;
 }
 
 .contacts {
@@ -180,11 +185,15 @@ body {
 	margin-bottom: 0;
 }
 
+.nav-main__li {
+	text-align: center;
+}
+
 .nav-main__link {
 	display: block;
 	text-decoration: none;
 	color: $text;
-	padding: 18px 20px;
+	padding: 18px 24px;
 	min-height: 62px;
 	cursor: pointer;
 	transition: all 0.3s;

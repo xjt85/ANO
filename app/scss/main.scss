@@ -87,11 +87,7 @@ body {
 
 .button-yellow {
 	display: inline-block;
-	padding: 21px 34px 20px;
 	background-color: $accent-yellow;
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 0;
 	text-transform: uppercase;
 	border: none;
 	border-radius: 42px;
@@ -114,6 +110,10 @@ body {
 }
 
 .button-header {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 21px 34px 20px;
+	line-height: 0;
 	margin: 6px -22px 8px;
 }
 

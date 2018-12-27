@@ -98,10 +98,6 @@ body {
 	border-radius: 42px;
 	transition: all 0.2s;
 	background-color: $accent-yellow;
-}
-
-.button_header {
-	margin: 11px 0px 6px;
 
 	&:hover {
 		background-color: lighten($accent-yellow, 10%);
@@ -116,6 +112,12 @@ body {
 	&:focus {
 		outline: none;
 	}
+
+	&_header {
+		margin: 11px 0px 6px;
+		padding: 21px 11px 18px;
+	}
+
 }
 
 .button-descr {
@@ -143,7 +145,7 @@ body {
 	&__address,
 	&__worktime {
 		font-size: 16px;
-		line-height: 30px;
+		line-height: 1.8em;
 	}
 
 	&-phone {
@@ -214,7 +216,7 @@ body {
 
 .search-form {
 	position: relative;
-	width: 90%;
+	width: 100%;
 }
 
 .search-form__icon {
@@ -241,14 +243,20 @@ body {
 	min-height: 500px;
 }
 
-.header__h1 {
-	margin-top: 80px;
-	padding: 45px 55px;
+.topline-button-wrapper {
+	text-align: center;
+}
+
+.h1 {
+	margin-top: 90px;
+	padding: 46px 55px;
 	background-color: #fff;
 	opacity: 0.78;
 	text-transform: uppercase;
-	font: bold 48px/65px "Lato-Bold", sans-serif;
+	font: bold 48px/1.35em "Lato-Bold", sans-serif;
 }
+
+
 
 //Стилизация блока Advantages
 
@@ -262,10 +270,7 @@ body {
 	text-align: center;
 	font: bold 36px "Lato-Bold", sans-serif;
 	color: $accent-blue;
-}
-
-.advantages__h2 {
-	margin-bottom: 35px;
+	margin-bottom: 45px;
 }
 
 .h3 {
@@ -351,7 +356,6 @@ body {
 .services {
 	&__h2 {
 		text-transform: uppercase;
-		margin-bottom: 50px;
 	}
 
 }
@@ -464,7 +468,6 @@ body {
 
 	&__h2 {
 		text-transform: uppercase;
-		margin-bottom: 75px;
 	}
 }
 
@@ -590,7 +593,6 @@ body {
 
 	&__h2 {
 		text-transform: uppercase;
-		margin-bottom: 60px;
 	}
 }
 
@@ -671,7 +673,6 @@ body {
 	}
 
 	&__descr {
-		width: 90%;
 		font-size: 12px;
 		line-height: 2em;
 	}
@@ -731,11 +732,12 @@ body {
 	}
 }
 
-.footer-button {
+.button_footer {
 	display: inline-block;
 	color: $text;
 	margin-bottom: 38px;
 }
+
 
 .social {
 

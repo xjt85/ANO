@@ -19,10 +19,18 @@
 /*==========  Mobile First  ==========*/
 
 // ≤576px
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(sm) {
+    .header__h1 {
+        padding: 23px 29px;
+        font-size: 31px;
+        line-height: 1.5em;
+    }
+}
 
 // ≤768px
 @include media-breakpoint-up(md) {
+    
+}
 
     // .header__h1 {
     //     margin-top: 92px;
@@ -46,7 +54,7 @@
     // .topline-button-wrapper {
     //     text-align: center;
     // }
-}
+// }
 
 // ≤992px
 @include media-breakpoint-up(lg) {

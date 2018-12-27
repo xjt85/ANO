@@ -95,13 +95,13 @@ body {
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 0;
+	border-radius: 42px;
+	transition: all 0.2s;
+	background-color: $accent-yellow;
 }
 
 .button_header {
-	background-color: $accent-yellow;
 	margin: 11px 0px 6px;
-	border-radius: 42px;
-	transition: all 0.2s;
 
 	&:hover {
 		background-color: lighten($accent-yellow, 10%);

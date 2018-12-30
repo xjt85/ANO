@@ -38,7 +38,7 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function() {
 	return gulp.src([
-		'app/libs/jquery/jquery-1.11.2.min.js',
+		'app/libs/jquery/jquery.js',
 		'app/libs/owl-carousel/js/owl.carousel.js',
 		'app/js/common.js', // Always at the end
 		])
@@ -58,7 +58,7 @@ gulp.task('rsync', function() {
 	.pipe(rsync({
 		root: 'app/',
 		hostname: 'username@yousite.com',
-		destination: 'yousite/public_html/',
+		destination: 'a0222395.xsph.ru/public_html/',
 		// include: ['*.htaccess'], // Includes files to deploy
 		exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
 		recursive: true,

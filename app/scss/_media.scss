@@ -134,7 +134,194 @@
 @include media-breakpoint-down(sm) {}
 
 // ≥576px
-@include media-breakpoint-down(xs) {}
+@include media-breakpoint-down(xs) {
+    .h1 {
+        // margin-top: 70px;
+        padding: 20px 15px;
+        font-size: 25px;
+    }
+
+    .h2 {
+        font-size: 24px;
+        margin-bottom: 0.75em;
+    }
+
+    .header-logo__text {
+        left: 0;
+    }
+    
+    .contacts {
+        &__worktime {
+            margin-bottom: 15px;
+        }
+        &__phone-wrapper {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .button-descr {
+        font-size: 16px;
+    }
+
+    .button_header {
+        margin-bottom: 15px;
+    }
+    
+    .header__top-line {
+        padding-bottom: 15px;
+    }
+
+    .nav-main {
+        &__li {
+            width: 100%;
+        }
+        &__link {
+            font-size: 22px;
+            padding: 10px 27px;
+        }
+    }
+
+    .whywe-item {
+        padding: 5%;
+
+        &__icon {
+            width: 130px;
+            height: 130px;
+        }
+    }
+
+
+    .tab-header__item {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    .tab-content {
+        &__ul {
+            margin-bottom: 30px;
+        }
+
+        &__link {
+            width: 100%;
+            padding: 3px 90px;
+        }
+
+        &__item {
+            padding: 30px 0;
+        }
+    }
+
+    .button-tab-wrapper {
+        text-align: center;
+    }
+
+    .callto {
+        padding: 0;
+
+        &::before {
+            display: none;
+        }
+
+        &__descr {
+            font-size: 22px;
+        }
+
+        &__descr,
+        &__number {
+            padding: 5px 0;
+        }
+
+        &__number {
+            background-color: $accent-yellow;
+            top: 0;
+
+            &::before {
+                display: block;
+                position: absolute;
+                height: 50%;
+                width: 100%;
+                bottom: 0;
+                right: 0;
+                background-color: $accent-yellow;
+            }
+        }
+
+        &__link {
+            font-size: 25px;
+        }
+
+        &__span {
+            font-size: 35px;
+        }
+
+    }
+
+    .button_header {
+        padding: 30px 35px 25px;
+        font-size: 18px;
+    }
+
+    .header__bg {
+        background-size: cover;
+        min-height: 310px;
+    }
+
+    .hello-img {
+        left: 12px;
+        width: 340px;
+        height: 240px;
+    }
+
+
+    .hello {
+        padding: 0;
+
+        &__h3 {
+            margin-bottom: 15px;
+        }
+    }
+
+    .scheme-item__right {
+        width: 44%;
+    }
+
+    .reviews {
+        padding-bottom: 10px;
+    }
+
+    .slider-companies {
+        padding: 20px 0;
+    }
+
+    .map {
+        height: 300px;
+    }
+
+    .footer__h3 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .copyright {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer__descr,
+    .footer-menu,
+    .call-order__tel,
+    .button_footer {
+        margin-bottom: 24px;
+    }
+
+    .call-order__tel {
+        display: block;
+    }
+}
 
 
 /*==========  Mobile First  ==========*/

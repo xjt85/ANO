@@ -19,43 +19,19 @@ $(document).ready(function () {
 		nav: true,
 		responsive: {
 			0: {
-				items: 1
+				items: 1,
+				nav: true
 			},
-			600: {
-				items: 1
-			},
-			1000: {
-				items: 2
+			1600: {
+				items: 2,
+				nav: true
 			}
 		}
-		// loop: true,
-		// margin: 10,
-		// responsiveClass: true,
-		// responsive: {
-		// 	0: {
-		// 		items: 1
-		// 	},
-		// 	600: {
-		// 		items: 1,
-		// 		nav: true,
-		// 		navText: [
-		// 			'<i class="fas fa-angle-left"></i>',
-		// 			'<i class="fas fa-angle-right"></i>'
-		// 		]
-		// 	},
-		// 	1000: {
-		// 		items: 2,
-		// 		nav: true,
-		// 		navText: [
-		// 			'<i class="fas fa-angle-left"></i>',
-		// 			'<i class="fas fa-angle-right"></i>'
-		// 		]
-		// 	}
-		// }
 	});
 
 	// -------------------------------------Карусель 2-------------------------------------------
 	$(".slider-companies").owlCarousel({
+		loop: true,
 		dots: true,
 		responsive: {
 			0: {

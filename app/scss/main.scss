@@ -277,41 +277,50 @@ body {
 	color: $text;
 	font: bold 16px "Lato-Bold", sans-serif;
 	text-transform: uppercase;
+	text-align: center;
 }
 
-.whywe-item__h3 {
-	margin-bottom: 8px;
-}
+
+
 
 .whywe-item {
-	display: inline-block;
-	text-align: center;
 	padding: 10%;
 
-	&__icon {
-		display: inline-block;
+	&__h3 {
+		margin-bottom: 8px;
+	}
+
+	&__icon-wrapper {
+		margin: 0 auto 26px;
 		width: 152px;
 		height: 152px;
 		border-radius: 50%;
 		background-color: #dcddde;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__icon {
+		display: inline-block;
 		background-repeat: no-repeat;
-		background-position: center center;
-		margin-bottom: 27px;
+		width: 88px;
+		height: 74px;
 
 		&_i1 {
-			background-image: url('../img/whywe/whywe1.png');
+			background-image: url('../img/whywe/whywe1.svg');
 		}
 
 		&_i2 {
-			background-image: url('../img/whywe/whywe2.png');
+			background-image: url('../img/whywe/whywe2.svg');
 		}
 
 		&_i3 {
-			background-image: url('../img/whywe/whywe3.png');
+			background-image: url('../img/whywe/whywe3.svg');
 		}
 
 		&_i4 {
-			background-image: url('../img/whywe/whywe4.png');
+			background-image: url('../img/whywe/whywe4.svg');
 		}
 	}
 
@@ -323,11 +332,11 @@ body {
 .hello {
 	padding: 0 0 62px;
 
-	.hello-img {
+	&-img {
 		position: relative;
 		margin-top: 20px;
 		width: calc(100% - 12px);
-		height: calc(width / 2);
+		height: 283px;
 		background-color: $accent-blue;
 
 		&__img {
@@ -505,23 +514,23 @@ body {
 		}
 
 		&_img1 {
-			background-image: url('../img/scheme/item1.png');
+			background-image: url('../img/scheme/item1.jpg');
 		}
 
 		&_img2 {
-			background-image: url('../img/scheme/item2.png');
+			background-image: url('../img/scheme/item2.jpg');
 		}
 
 		&_img3 {
-			background-image: url('../img/scheme/item3.png');
+			background-image: url('../img/scheme/item3.jpg');
 		}
 
 		&_img4 {
-			background-image: url('../img/scheme/item4.png');
+			background-image: url('../img/scheme/item4.jpg');
 		}
 
 		&_img5 {
-			background-image: url('../img/scheme/item5.png');
+			background-image: url('../img/scheme/item5.jpg');
 
 			&::after {
 				display: none;
@@ -755,6 +764,7 @@ body {
 	&__link {
 		display: block;
 		color: #fff;
+
 		&:hover {
 			color: darken(#fff, 20%);
 		}
@@ -768,6 +778,7 @@ body {
 .copyright__link {
 	font-size: 14px;
 	color: #ffffff;
+
 	&:hover {
 		text-decoration: none;
 		color: darken(#fff, 50%);

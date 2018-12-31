@@ -102,7 +102,7 @@ body {
 	background-color: $accent-yellow;
 
 	&:hover {
-		background-color: lighten($accent-yellow, 10%);
+		background-color: lighten($accent-yellow, 20%);
 
 	}
 
@@ -116,8 +116,8 @@ body {
 	}
 
 	&_header {
-		margin: 11px 0px 6px;
-		padding: 21px 11px 18px;
+		margin: 11px -15px 6px;
+		padding: 21px 32px 18px;
 	}
 
 }
@@ -132,6 +132,9 @@ body {
 
 .header {
 	position: relative;
+	&__top-line {
+		padding-bottom: 10px;
+	}
 }
 
 
@@ -153,24 +156,30 @@ body {
 		font: bold 19px/25px "Lato-Bold", sans-serif;
 		color: $text;
 
-		&:first-of-type {
-			margin-bottom: 8px;
-		}
-
 		&:hover {
-			color: $text;
+			text-decoration: none;
+			color: lighten($text, 50%);
 		}
 
 		&__span {
 			display: inline-block;
 			font-size: 25px;
 			line-height: 19px;
+
+			&:hover {
+				color: lighten($text, 50%);
+			}
 		}
 	}
+
 }
 
-.our-phones {
-	margin-bottom: 10px;
+.contacts__phone-wrapper {
+	display: block;
+
+	&_wr1 {
+		margin-bottom: 8px;
+	}
 }
 
 //--------------------------------------------------Главное меню (навигация)--------------------------------------------------
@@ -201,7 +210,7 @@ body {
 	// min-height: 62px;
 	cursor: pointer;
 	transition: all 0.3s;
-	
+
 	&:hover {
 		background-color: $accent-blue;
 		color: #fff;
@@ -210,42 +219,43 @@ body {
 }
 
 // .search-form-wrapper {
-	// 	display: flex;
-	// 	align-items: center;
-	// 	width: 100%;
-	// 	height: 100%;
-	// }
-	
-	.search-form {
-		position: relative;
-		// width: 100%;
-	}
-	
-	.search-form__icon {
-		position: absolute;
-		top: 10px;
-		left: 15px;
-		color: #999797;
-	}
-	
-	.search-form__input {
-		color: #999797;
-		padding: 5px 5px;
-		border: none;
-		//width: 100%;
-		border-radius: 18px;
-		text-indent: 35px;
-		
-		&::-webkit-input-placeholder {
-			color: #999797;
-		}
-	}
+// 	display: flex;
+// 	align-items: center;
+// 	width: 100%;
+// 	height: 100%;
+// }
 
-	//--------------------------------------------------Главное меню (навигация) КОНЕЦ--------------------------------------------------
-	
-	.topline-button-wrapper {
-		text-align: center;
+.search-form {
+	position: relative;
+	// width: 100%;
+}
+
+.search-form__icon {
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	color: #999797;
+}
+
+.search-form__input {
+	color: #999797;
+	padding: 5px 5px;
+	border: none;
+	//width: 100%;
+	border-radius: 18px;
+	text-indent: 35px;
+
+	&::-webkit-input-placeholder {
+		color: #999797;
 	}
+}
+
+//--------------------------------------------------Главное меню (навигация) КОНЕЦ--------------------------------------------------
+
+.topline-button-wrapper {
+	text-align: center;
+}
+
 .header__bg {
 	min-height: 500px;
 }

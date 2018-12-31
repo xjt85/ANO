@@ -35,9 +35,7 @@
         line-height: 2.3em;
     }
 
-    .nav-main__link {
-        padding: 18px 14px;
-    }
+    
 
     .tab-header__item {
         padding: 20px 49px 15px;
@@ -92,8 +90,35 @@
         margin-top: 15px;
     }
 
-    .contacts__phone-wrapper {
-        padding-left: 70px;
+    .h2 {
+        font-size: 24px;
+        margin-bottom: 0.75em;
+    }
+
+    .contacts {
+        &__worktime {
+            margin-bottom: 15px;
+        }
+
+        &__phone-wrapper {
+            padding: 0;
+            text-align: center;
+        }
+    }
+
+    .contacts-phone {
+        font-size: 16px;
+        &__span {
+            font-size: 19px;
+        }
+    }
+
+    .button-descr {
+        font-size: 16px;
+    }
+
+    .header__top-line {
+        padding-bottom: 15px;
     }
 
     .search-form-wrapper {
@@ -106,14 +131,7 @@
         padding: 21px 35px 18px;
     }
 
-    .nav-main__ul {
-        justify-content: start;
-    }
-
-    .nav-main__link {
-        padding: 18px 27px;
-    }
-
+    
     .call-order__tel {
         font-size: 17px;
         margin-bottom: 70px;
@@ -122,6 +140,10 @@
     .button_footer {
         margin-bottom: 70px;
         padding: 21px 15px 20px;
+    }
+
+    .whywe-item {
+        padding: 5%;
     }
 }
 
@@ -136,53 +158,19 @@
         font-size: 25px;
     }
 
-    .h2 {
-        font-size: 24px;
-        margin-bottom: 0.75em;
-    }
-
     .header-logo__text {
         white-space: nowrap;
         font-size: 12px;
         left: 0;
     }
 
-    .contacts {
-        &__worktime {
-            margin-bottom: 15px;
-        }
-
-        &__phone-wrapper {
-            padding: 0;
-            text-align: center;
-        }
-    }
-
-    .button-descr {
-        font-size: 16px;
-    }
-
     .button_header {
         margin-bottom: 15px;
     }
 
-    .header__top-line {
-        padding-bottom: 15px;
-    }
-
-    .nav-main {
-        &__li {
-            width: 100%;
-        }
-
-        &__link {
-            font-size: 22px;
-            padding: 10px 27px;
-        }
-    }
+    
 
     .whywe-item {
-        padding: 5%;
 
         &__icon-wrapper {
             width: 120px;
@@ -195,7 +183,6 @@
             background-size: 74px auto;
         }
     }
-
 
     .button_header {
         padding: 30px 35px 25px;

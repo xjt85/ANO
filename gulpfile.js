@@ -40,6 +40,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'app/libs/jquery/jquery.js',
 		'app/libs/owl-carousel/js/owl.carousel.js',
+		'app/libs/bootstrap/js/bootstrap.min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

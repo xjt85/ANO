@@ -22,8 +22,12 @@ $(document).ready(function () {
 				items: 1,
 				nav: true
 			},
-			1600: {
+			1200: {
 				items: 2,
+				nav: true
+			},
+			1400: {
+				items: 3,
 				nav: true
 			}
 		}

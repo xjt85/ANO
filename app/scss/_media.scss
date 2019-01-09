@@ -35,7 +35,7 @@
         line-height: 2.3em;
     }
 
-    
+
 
     .tab-header__item {
         padding: 20px 49px 15px;
@@ -67,6 +67,10 @@
 
     .h2 {
         margin-bottom: 45px;
+    }
+
+    .call-order__tel2 {
+        margin-bottom: 11px;
     }
 }
 
@@ -108,9 +112,15 @@
 
     .contacts-phone {
         font-size: 16px;
+
         &__span {
             font-size: 19px;
         }
+    }
+
+    .button_header {
+        margin: 11px 0 6px;
+        padding: 21px 35px 18px;
     }
 
     .button-descr {
@@ -126,12 +136,6 @@
         align-items: flex-start;
     }
 
-    .button_header {
-        margin: 11px 0 6px;
-        padding: 21px 35px 18px;
-    }
-
-    
     .call-order__tel {
         font-size: 17px;
         margin-bottom: 70px;
@@ -145,6 +149,7 @@
     .whywe-item {
         padding: 5%;
     }
+
 }
 
 // ≥768px
@@ -165,10 +170,9 @@
     }
 
     .button_header {
+        padding: 24px 25px 20px;
         margin-bottom: 15px;
     }
-
-    
 
     .whywe-item {
 
@@ -184,10 +188,6 @@
         }
     }
 
-    .button_header {
-        padding: 30px 35px 25px;
-        font-size: 18px;
-    }
 
     .header__bg {
         background-size: cover;

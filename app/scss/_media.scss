@@ -3,7 +3,7 @@
 
 /*==========  Desktop First  ==========*/
 
-// ≥1200px
+// <=1200px
 @include media-breakpoint-down(lg) {
     .header__bg {
         min-height: 425px;
@@ -75,7 +75,7 @@
     }
 }
 
-// ≥992px
+// <=992px
 @include media-breakpoint-down(md) {
 
     .contacts__address,
@@ -155,10 +155,72 @@
     .footer-menu__item {
         flex-basis: 50%;
     }
+
+    .callto {
+        &__descr {
+            font-size: 24px;
+        }
+
+        &__link {
+            font-size: 26px;
+        }
+
+        &__span {
+            font-size: 32px;
+        }
+    }
+
+    .call-order {
+        margin-top: 20px;
+
+        &__tel {
+            margin-bottom: 40px;
+        }
+    }
+
+    .footer {
+        &__h3 {
+            width: 100%;
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+
+    }
+
+    .footer-menu__item {
+        padding-left: 50px;
+    }
+
+    .social {
+        display: inline-block;
+    }
+
+    .button_footer {
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
 }
 
-// ≥768px
+// <=768px
 @include media-breakpoint-down(sm) {
+
+    .tab-content__ul,
+    .button_tab {
+        margin-left: 50px;
+    }
+
+    .tab-header__item {
+        padding: 20px 36px 15px;
+    }
+
+    .callto {
+        &::before {
+            display: none;
+        }
+    }
+
     .footer {
         &__h3 {
             margin-bottom: 20px;
@@ -173,12 +235,14 @@
     .copyright {
         text-align: center;
     }
-    .call-order__tel2, .button_footer {
+
+    .call-order__tel2,
+    .button_footer {
         margin-bottom: 20px;
     }
 }
 
-// ≥576px
+// <=576px
 @include media-breakpoint-down(xs) {
     .h1 {
         // margin-top: 70px;
@@ -331,6 +395,10 @@
     .call-order__tel,
     .button_footer {
         margin-bottom: 24px;
+    }
+
+    .footer-menu__item {
+        padding-left: 0px;
     }
 
     .call-order__tel {

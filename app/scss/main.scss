@@ -379,7 +379,7 @@ body {
 
 	&__item {
 		display: inline-block;
-		padding: 20px 68px 15px;
+		padding: 20px 66px 15px;
 		background-color: #F9FAFA;
 		cursor: pointer;
 		transition: all 0.2s;
@@ -496,11 +496,12 @@ body {
     &::after {
       position: absolute;
       content: "";
-      width: 44px;
-      height: 44px;
+      width: 43px;
+      height: 32px;
       top: -2px;
       right: -30px;
       background-image: url("../img/scheme/arrow.svg");
+      background-repeat: no-repeat;
     }
 
     &_img1 {
